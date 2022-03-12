@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	char alp;
+	char c;
 
-	for (alp = 'a'; alp <= 'z'; alp++)
-		if (alp == 'q' || alp == 'e')
+	for (c = 'a'; c <= 'z'; c++)
+		if (c == 'q' || c == 'e')
 			continue;
-		putchar(alp);
+		putchar(c);
 
 	putchar(10);
 	return (0);
