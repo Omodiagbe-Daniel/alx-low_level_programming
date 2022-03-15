@@ -7,12 +7,10 @@
 int _islower(int c)
 {
 	char c;
-	char n;
-
-	for (c = 'a'; c <= 'z'; c++)
-		if (c == n)
-			_putchar('1');
-		else
-			_putchar('0');
+	
+	if (c >= 'a' && c <= 'z')
+		print('1');
+	else
+		print('0');
 	return (0);
 }
