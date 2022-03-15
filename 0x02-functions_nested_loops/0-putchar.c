@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+
 /*
  * main.h - header file
  *Description:codes start and ends here
@@ -8,9 +8,6 @@
  */
 int main(void)
 {
-{
-	putchar('_');
-}
 	char alp[7] = "putchar";
 	int n;
 
