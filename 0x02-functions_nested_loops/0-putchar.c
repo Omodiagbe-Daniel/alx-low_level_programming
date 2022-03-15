@@ -1,5 +1,7 @@
-#include "main.h"
+#include <stdio.h>
+#include <main.h>
 /*
+ *Description:codes start and ends here
  * main - Entry point
  * Return: Always 0 (Success)
  */
