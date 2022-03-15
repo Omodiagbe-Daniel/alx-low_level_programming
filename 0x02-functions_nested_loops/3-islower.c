@@ -9,8 +9,8 @@ int _islower(int c)
 	char c;
 	
 	if (c >= 'a' && c <= 'z')
-		print('1');
+		_putchar('1');
 	else
-		print('0');
+		_putchar('0');
 	return (0);
 }
