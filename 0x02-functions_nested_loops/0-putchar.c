@@ -11,9 +11,9 @@ int main(void)
 
 	putchar('_');
 
-	while (n == 'p' || n == 'u' || n == 't' || n == 'c')
+	for (n == 'p' || n == 'u' || n == 't' || n == 'c')
 		putchar(n);
-	while (n == 'h' || n == 'a' || n == 'r')
+	for (n == 'h' || n == 'a' || n == 'r')
 		putchar(n);
 	putchar('\n');
 	return (0);
