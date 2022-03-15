@@ -7,14 +7,15 @@
  */
 int main(void)
 {
-	char n;
-
+{
 	putchar('_');
+}
+	char alp[7] = "putchar";
+	int n;
 
-	for (n == 'p' || n == 'u' || n == 't' || n == 'c')
-		putchar(n);
-	for (n == 'h' || n == 'a' || n == 'r')
-		putchar(n);
+	for (n = 0; n < 7; n++)
+{
+	putchar(alp[n]);
 	putchar('\n');
-	return (0);
+}
 }
