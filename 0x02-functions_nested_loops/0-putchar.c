@@ -1,17 +1,15 @@
 #include <stdio.h>
-
-/*
- * main.h - header file
- *Description:codes start and ends here
+/**
  * main - Entry point
+ * Description
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char alp[7] = "putchar";
+	char alp[8] = "_putchar";
 	int n;
 
-	for (n = 0; n < 7; n++)
+	for (n = 0; n < 8; n++)
 	{
 	putchar(alp[n]);
 	}
