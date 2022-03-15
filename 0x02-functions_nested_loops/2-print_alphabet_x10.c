@@ -17,10 +17,10 @@ while (j < 10)
 while (h < 26)
 {
 _putchar(i[h]);
-h++;
+j++;
 }
 _putchar('\n');
-j++;
+h++;
 }
 }
 
