@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _islower - check for lower case alphabets and upper  case alphabets
+ * _isalpha - check for lower case alphabets and upper  case alphabets
  * @c : letter being tested
  * Return: Always 0 (Success)
  */
