@@ -8,16 +8,19 @@
  */
 void print_alphabet_x10(void)
 {
-	char i[26] = "abcdefghijlmnopqrstuvwxyz";
-	int j = 0;
-	int h = 0;
+char i[26] = "abcdefghijlmnopqrstuvwxyz";
+int j = 0;
+int h = 0;
 
-	while (j  < 26)
+while (j < 10)
 {
-	while (h < 10)
-		_putchar(i[j]);
-		h++;
+while (h < 26)
+{
+_putchar(i[h]);
+h++;
 }
-	_putchar('\n');
-	j++;
+_putchar('\n');
+j++;
 }
+}
+
