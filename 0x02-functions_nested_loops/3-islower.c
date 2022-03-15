@@ -1,18 +1,18 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - Entry point
- * Description
+ * _islower (int c) - printing 1 for lower characters
+ * Description: printing lowercase alphabet
  * Return: Always 0 (Success)
  */
-int main(void)
+int _islower(int c)
 {
-	char alp[8] = "_putchar";
-	int n;
+	char c;
+	char n;
 
-	for (n = 0; n < 8; n++)
-	{
-	putchar(alp[n]);
-	}
-	putchar('\n');
+	for (c = 'a'; c <= 'z'; c++)
+		if (c == n)
+			_putchar('1');
+		else
+			_putchar('0');
 	return (0);
 }

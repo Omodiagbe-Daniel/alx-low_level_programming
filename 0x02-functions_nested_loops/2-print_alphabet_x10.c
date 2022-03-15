@@ -8,17 +8,16 @@
  */
 void print_alphabet_x10(void)
 {
-	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i = 0, j;
+	char i[26] = "abcdefghijlmnopqrstuvwxyz";
+	int j = 0;
+	int h = 0;
 
-	while (i < 26)
-		i++;
-
-		j = 0;
-		while (j < 10)
-			_putchar(alp[i]);
-			j++;
-
-
+	while (j  < 26)
+{
+	while (h < 10)
+		_putchar(i[j]);
+		h++;
+}
 	_putchar('\n');
+	j++;
 }
