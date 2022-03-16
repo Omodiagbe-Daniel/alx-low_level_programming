@@ -19,7 +19,7 @@ return (0);
 }
 else
 {
-int r = -1 * r
+int r = -1 * r;
 _putchar(r + '0');
 return (r);
 }
