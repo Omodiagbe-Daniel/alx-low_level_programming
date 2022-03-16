@@ -1,14 +1,25 @@
 #include "main.h"
 /**
  * print_last_digit - check for last digit of a number
- *@n :parameter is of type int
+ * @n : letter being tested
  * Return: Always 0 (Success)
  */
 int print_last_digit(int n)
 {
-i = _abs(n);
 int r = n % 10;
+if (n > 0)
 {
+_putchar(r + '0');
+return (r);
+}
+else if (n == 0)
+{
+_putchar(48);
+return (0);
+}
+else
+{
+int r = -1 * r
 _putchar(r + '0');
 return (r);
 }
