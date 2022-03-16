@@ -16,4 +16,5 @@ for (j = 0; j <= 9; j++)
 _putchar(i * j);
 }
 }
+_putchar('\n');
 }
