@@ -5,7 +5,7 @@
  * add - function that adds two integers
  * @n : num1
  * @m : num2
- * int : returns an integer
+ * Return: int
  */
 int add(int n, int m)
 {
