@@ -9,7 +9,7 @@
  */
 int add(int n, int m)
 {
-putchar((n + '0') + (m + '0'));
+putchar((n + m));
 return (n + m);
 return (0);
 }
