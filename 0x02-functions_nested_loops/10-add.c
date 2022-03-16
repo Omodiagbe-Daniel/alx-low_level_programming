@@ -2,14 +2,14 @@
 #include "main.h"
 
 /**
- * add - adding two integers
- * int - function type
- * @m - num1
- * @n - num2
- * Return 0 (success)
+ * add - function that adds two integers
+ * @n : num1
+ * @m : num2
+ * int : returns an integer
  */
-int add(int, int)
+int add(int n, int m)
 {
 putchar((n + '0') + (m + '0'));
 return (n + m);
+return (0);
 }
