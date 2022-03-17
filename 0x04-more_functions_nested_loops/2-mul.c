@@ -15,4 +15,5 @@ scanf("%d\n", &a);
 scanf("%d\n", &b);
 c = a * b;
 _putchar(c);
+return (0);
 }
