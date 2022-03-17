@@ -10,9 +10,6 @@
 int mul(int a, int b)
 {
 int c;
-
-scanf("%d\n", &a);
-scanf("%d\n", &b);
 c = a * b;
 _putchar(c);
 return (0);
