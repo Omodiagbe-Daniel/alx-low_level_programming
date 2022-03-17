@@ -1,5 +1,5 @@
 #include "main.h"
-#include <std.io>
+#include <stdio.h>
 
 /**
  * _isupper - checks for upper case alphabets
