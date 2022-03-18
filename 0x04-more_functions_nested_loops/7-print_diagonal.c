@@ -12,10 +12,11 @@ int i = 0;
 int j;
 
 while (i < n)
-	_putchar(92 * n);
-	i++;
-	_putchar(10);
-	j = 0;
-	while (j < i)
-		_putchar(' ' * n);
+{
+_putchar(92 * n);
+i++;
+{
+j = 0;
+while (j < i)
+	_putchar(' ' * n);
 }
