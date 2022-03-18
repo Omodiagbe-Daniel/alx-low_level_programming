@@ -14,7 +14,7 @@ int j;
 for (i = 0; i <= 14; i++)
 {
 j = 0;
-while (j <= 10)
+while (j <= 14)
 {
 if (i >= 10)
 	_putchar((i / 10) + '0');
