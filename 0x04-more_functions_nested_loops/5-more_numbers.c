@@ -13,12 +13,14 @@ int j;
 
 for (i = 0; i <= 14; i++)
 {
-	j = 0;
-	while (j >= 10)
-		if (i >= 10)
-			_putchar((i / 10) + '0');
-			_putchar((i % 10) + '0');
-		j++;
+j = 0;
+while (j >= 10)
+{
+if (i >= 10)
+	_putchar((i / 10) + '0');
+	_putchar((i % 10) + '0');
+j++;
+}
 }
 _putchar(10);
 }
