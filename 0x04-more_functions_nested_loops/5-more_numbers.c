@@ -11,15 +11,15 @@ void more_numbers(void)
 int i;
 int j;
 
-for (i = 0; i <= 14; i++)
+for (j = 0; j <= 10; j++)
 {
 j = 0;
-while (j <= 14)
+while (i < 15)
 {
 if (i >= 10)
 	_putchar((i / 10) + '0');
 	_putchar((i % 10) + '0');
-j++;
+i++;
 }
 }
 _putchar(10);
