@@ -1,19 +1,48 @@
 #include "main.h"
 #include <stdio.h>
 
+
+
 /**
- * print_rev - prints a string in the reverse form
- * @s: Parameter is of type char
- * Return: Always void
+  * print_rev - prints string
+  * @s: input string
+  * Return: no return
  */
 
+
+
 void print_rev(char *s)
+
 {
 
-	while (*s != '\0')
-	{
-		_putchar('\0');
-		--s;
-	}
-	_putchar(10);
+int count = 0;
+
+
+
+while (*s != '\0')
+
+{
+
+s++;
+
+count++;
+
+}
+
+
+
+while (count > 0)
+
+{
+
+s--;
+
+_putchar(*s);
+
+count--;
+
+}
+
+_putchar('\n');
+
 }
