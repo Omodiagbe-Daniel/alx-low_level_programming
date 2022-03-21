@@ -15,7 +15,8 @@ void reset_to_98(int *n)
 
 	*n = 98;
 
-	_putchar(p);
+	_putchar(p / 10 + '0');
+	_putchar(p % 10 + '0');
 }
 
 
