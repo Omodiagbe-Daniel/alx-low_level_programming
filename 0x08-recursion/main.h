@@ -10,3 +10,5 @@ int _sqrt(int n, int i);
 int is_palindrome(char *s);
 int p1(char *s, int l);
 int wildcmp(char *s1, char *s2);
+int tmp_prime(int n, int i);
+int divisors(int n, int m)
