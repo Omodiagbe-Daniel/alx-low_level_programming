@@ -29,13 +29,9 @@ if (n > len2)
 n = len2;
 }
 if (s1 == NULL)
-{
-s1 = "";
-}
+	s1 = "";
 if (s2 == NULL)
-{
-s2 = "";
-}
+	s2 = "";
 p = malloc((len1 + n + 1) * sizeof(char));
 if (p == NULL)
 {
@@ -43,17 +39,16 @@ return (NULL);
 }
 i = 0;
 while (i < len1)
-i++;
 {
-p[i] = s1[i];
+	i++;
+	p[i] = s1[i];
 }
+;
 while (i < (len1 + n))
-i++;
 {
-p[i] = s2[i - len1];
+	i++;
+	p[i] = s2[i - len1];
 }
-{
 p[i] = '\0';
-}
 return (p);
 }
