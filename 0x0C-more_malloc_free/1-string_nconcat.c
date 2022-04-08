@@ -37,18 +37,15 @@ if (p == NULL)
 {
 return (NULL);
 }
-i = 0;
-while (i < len1)
-{
-	i++;
-	p[i] = s1[i];
-}
-;
-while (i < (len1 + n))
-{
-	i++;
-	p[i] = s2[i - len1];
-}
-p[i] = '\0';
+for (i = 0; i < len1; i++)
+	{
+		p[i] = s1[i];
+	}
+
+	for (; i < (len1 + n); i++)
+	{
+		p[i] = s2[i - len1];
+	}
+	p[i] = '\0';
 return (p);
 }
