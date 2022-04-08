@@ -38,6 +38,7 @@ if (p == NULL)
 {
 return (NULL);
 }
+_memset(p, 0, (nmemb * size));
 return (p);
 }
 
