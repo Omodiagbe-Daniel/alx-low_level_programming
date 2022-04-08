@@ -38,14 +38,14 @@ if (p == NULL)
 return (NULL);
 }
 for (i = 0; i < len1; i++)
-	{
-		p[i] = s1[i];
-	}
+{
+p[i] = s1[i];
+}
 
-	for (; i < (len1 + n); i++)
-	{
-		p[i] = s2[i - len1];
-	}
-	p[i] = '\0';
+for (; i < (len1 + n); i++)
+{
+p[i] = s2[i - len1];
+}
+p[i] = '\0';
 return (p);
 }
