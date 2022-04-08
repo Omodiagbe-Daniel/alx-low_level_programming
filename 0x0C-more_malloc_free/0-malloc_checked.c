@@ -15,8 +15,7 @@ void *p;
 p = malloc(b);
 if (p == NULL)
 {
-_putchar(98 / 10 + '0');
-_putchar(98 % 10 + '0');
+exit(98);
 }
 return (p);
 }
