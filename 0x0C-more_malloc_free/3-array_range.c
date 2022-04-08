@@ -7,28 +7,17 @@
  * @max: maximum
  * Return: array
  */
-
 int *array_range(int min, int max)
 {
-int i;
-int *p;
-int j = 0;
+	int *arr, i = 0, t = min;
 
-if (min > max)
-{
-return (NULL);
-}
-for (; min <= max; i++)
-{
-p = malloc(i * sizeof(int));
-}
-if (p == NULL)
-{
-return (NULL);
-}
-while (j < i)
-{
-p[j++] = min++;
-}
-return (p);
+	if (min > max)
+		return (0);
+	arr = malloc((max - min + 1) * sizeof(int));
+
+	if (!arr)
+		return (0);
+	while (i <= max - min)
+		arr[i++] = t++;
+	return (arr);
 }
