@@ -5,16 +5,23 @@
  * Return: Always 0 (Success)
  */
 void times_table(void)
+{
 int i;
 int j;
+int n;
 
-{
 for (i = 0; i <= 9; i++)
 {
 for (j = 0; j <= 9; j++)
 {
-_putchar(i * j);
+n = i * j;
+_putchar(n);
+if (n > 57)
+{
+_putchar(n / 10 + '0');
+_putchar(n % 10 + '0');
 }
 }
 _putchar('\n');
+}
 }
