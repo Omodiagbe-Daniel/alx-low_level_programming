@@ -14,9 +14,12 @@ for (i = 0; i <= 9; i++)
 {
 	for (j = 0; j <= 9; j++)
 	{
-		n = i * j;
-		_putchar(n + '0');
-		if (n > 9)
+		if (j == 0)
+		{
+			n = i * j;
+			_putchar(n + '0');
+		}
+		else if (n > 9)
 		{
 			_putchar(' ');
 			_putchar(n / 10 + '0');
