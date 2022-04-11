@@ -1,6 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
-
+#include <math.h>
 /**
 * print_dog - function that prints a struct dog
 *@d: pointer to structure
@@ -19,7 +19,7 @@ else
 {
 printf("Name: %s\n", "(nil)");
 }
-if (d->age != 0)
+if (d->age != 0 || d->age != NAN)
 {
 printf("Age: %f\n", d->age);
 }
