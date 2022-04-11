@@ -2,7 +2,7 @@
 
 /**
 * init_dog - initializing a variable of type struct
-* @dog *d: of type struct
+* @d: of type struct
 * @name: first member
 * @age: second member
 * @owner: third member
