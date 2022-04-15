@@ -5,7 +5,7 @@
 /**
 * print_numbers - print numbers
 * @separator: separates the numbers
-* n: numbers of integers passed
+* @n: numbers of integers passed
 * Return: Nothing
 */
 
@@ -16,11 +16,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list ptr;
 
 	va_start(ptr, n);
-	if (separator)
+	if (separator != NULL)
 	{
 		while (i < n)
 		{
-			num = va_arg(ptr,int);
+			num = va_arg(ptr, int);
 			printf("%d", num);
 			if (i < (n - 1))
 			{
