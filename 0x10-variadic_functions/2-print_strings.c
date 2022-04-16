@@ -32,7 +32,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 					}
 				}
 			}
-			else if (str != NULL)
+			if (str != NULL)
 			{
 				printf("%s", str);
 				{
