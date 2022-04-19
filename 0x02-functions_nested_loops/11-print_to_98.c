@@ -7,12 +7,43 @@
  */
 void print_to_98(int n)
 {
-int r;
-scanf("%d\n", &n);
-for (r = n; r <= 98; r++)
-{
-_putchar(r);
-_putchar(32);
-}
-_putchar(10);
+	int r;
+
+	if (n < 0)
+	{
+		for (r = n; r <= 98; r++)
+		{
+			printf("%d", r);
+			if (r < 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+		}
+	}
+	else if (n == 0)
+	{
+                for (r = n; r <= 98; r++)
+                {
+                        printf("%d", r);
+                        if (r < 98)
+                        {
+                                _putchar(',');
+                                _putchar(' ');
+                        }
+                }
+	}
+	else
+	{
+                for (r = n; r <= 98; r++)
+                {
+                        printf("%d", r);
+                        if (r < 98)
+                        {
+                                _putchar(',');
+                                _putchar(' ');
+                        }
+                }
+	}
+	_putchar(10);
 }
