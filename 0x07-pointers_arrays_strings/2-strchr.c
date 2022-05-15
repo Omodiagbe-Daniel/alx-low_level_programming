@@ -10,17 +10,23 @@
 
 char *_strchr(char *s, char c)
 {
-while (*s != '\0')
-{
-if (*s == c)
-{
-return (s);
-}
-s++;
-}
-if (*s != c)
-{
-return (NULL);
-}
-return (0);
+	int i, j = 0;
+
+	if (s)
+	{
+		for (i = 0; s[i] != '\0'; i++)
+		{
+			if (s[i] != c)
+			{
+				j++;
+			}
+			if (s[i] == c)
+			{
+				s[i] = s[j];
+				j++;
+				i++;
+			}
+		}
+	}
+	return (NULL);
 }
