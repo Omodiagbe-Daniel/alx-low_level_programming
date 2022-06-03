@@ -33,11 +33,11 @@ char *str_concat(char *s1, char *s2)
 	char *str;
 	int x, y, length, length1, length2;
 
-	if (!*s1 || *s1 == NULL)
+	if (!*s1 || s1 == NULL)
 		s1 = "";
 	else
 		length1 = _strlen(s1);
-	if (!*s2 || *s2 == NULL)
+	if (!*s2 || s2 == NULL)
 		s2 = "";
 	else
 		length2 = _strlen(s2);
