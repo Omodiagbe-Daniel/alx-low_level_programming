@@ -33,5 +33,9 @@ int int_index(int *array, int size, int (*cmp)(int))
 			return (-1);
 		}
 	}
+	if (!(cmp && array))
+	{
+		return (-1);
+	}
 	return (0);
 }
