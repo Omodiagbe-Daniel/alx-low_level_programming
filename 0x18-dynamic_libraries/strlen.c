@@ -2,14 +2,20 @@
 #include <stdio.h>
 
 /**
- * _isdigit - checks for a digit (0 - 9)
- * @c: letter being tested
- * Return: int Always 0 (Success)
+ * _strlen - function that returns the length of a string.
+ * @s: parameter is of type char
+ * Return: Always 0
  */
-int _isdigit(int c)
+
+int _strlen(char *s)
 {
-if (c >= 48 && c <= 57)
-	return (1);
-else
-	return (0);
+	int len = 0;
+
+	while (*s != '\0')
+	{
+		s++;
+		len++;
+	}
+	return (len);
+
 }
