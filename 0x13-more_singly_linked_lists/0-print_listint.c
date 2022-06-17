@@ -5,7 +5,7 @@
 
 /**
 * print_listint - prints all the elements of a listint_t list
-* @h; first parameter
+* @h: first parameter
 * Return: number of nodes
 */
 
