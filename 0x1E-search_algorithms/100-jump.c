@@ -47,6 +47,13 @@ int jump_search(int *array, size_t size, int value)
 	}
 	next = size;
 	step = sqrt(size);
+	if (next == 1)
+	{
+		printf("Value found between indexes [%ld] and [%ld]\n",
+next - step, next);
+		search = linear_search1(array, size - 1, 0 , value);
+		return (search);
+	}
 	for (i = prev; i < next; i = i + step)
 	{
 		if (array[i] >= value)
