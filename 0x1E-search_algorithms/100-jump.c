@@ -47,29 +47,33 @@ int jump_search(int *array, size_t size, int value)
 	}
 	next = size;
 	step = sqrt(size);
-	if (next == 1)
+	if (size == 1)
 	{
-		printf("Value found between indexes [%ld] and [%ld]\n",
-next - step, next);
-		search = linear_search1(array, size - 1, 0 , value);
+		printf("Value found between indexes [%d] and [%d]\n",
+0, 1);
+		search = linear_search1(array, size, 0, value);
 		return (search);
 	}
-	for (i = prev; i < next; i = i + step)
+	else
 	{
-		if (array[i] >= value)
+		for (i = prev; i < next; i = i + step)
 		{
-			printf("Value found between indexes [%ld] and [%ld]\n",
+			if (array[i] >= value)
+			{
+				printf("Value found between indexes [%ld] and [%ld]\n",
 i - step, i);
-			search = linear_search1(array, i, i - step, value);
-			return (search);
+				search = linear_search1(array, i, i - step, value);
+				return (search);
+			}
+			else if (array[i] < value)
+			{
+				printf("Value checked array [%ld] = [%d]\n", i, array[i]);
+			}
 		}
-		else if (array[i] < value)
-		{
-			printf("Value checked array [%ld] = [%d]\n", i, array[i]);
-		}
+		printf("Value found between indexes [%ld] and [%ld]\n",
+i - step, i);
+		search = linear_search1(array, size - 1, i - step, value);
+		return (search);
 	}
-	printf("Value found between indexes [%ld] and [%ld]\n",
-i - step, i);
-	search = linear_search1(array, size - 1, i - step, value);
-	return (search);
+	return (0);
 }
