@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
-* binary_to_unit - converts a binary number to an unsigned int
+* binary_to_uint - converts a binary number to an unsigned int
 * @b: points to string 0 and 1
 * Return: converted number
 */
