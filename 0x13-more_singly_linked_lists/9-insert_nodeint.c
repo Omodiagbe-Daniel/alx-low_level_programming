@@ -4,8 +4,7 @@
 
 /**
 * *insert_nodeint_at_index - inserts a new node at a given position
-* @head: pointer to linked list
-* @idx: index of the list
+* @head: pointer to linked list* @idx: index of the list
 * @n: data
 * Return: address of the new node
 */
