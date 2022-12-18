@@ -1,29 +1,31 @@
 #!/usr/bin/python3
-"""TEchnical interview preparation"""
+"""Module that calculates the perimeter of an island in a grid."""
+
+
+def num_water_neighbors(grid, i, j):
+    """Returns the number of water neighbors a cell has in a grid."""
+
+    num = 0
+
+    if i <= 0 or not grid[i - 1][j]:
+        num += 1
+    if j <= 0 or not grid[i][j - 1]:
+        num += 1
+    if j >= len(grid[i]) - 1 or not grid[i][j + 1]:
+        num += 1
+    if i >= len(grid) - 1 or not grid[i + 1][j]:
+        num += 1
+
+    return num
 
 
 def island_perimeter(grid):
-    """returns the perimeter of the island discribed in the grid
-        grid is a list of list of integers:
-	0 represents a water zone
-	1 represents a land zone
-	One cell is a square with side length 1
-	Grid cells are connected horizontally/vertically (not diagonally).
-	Grid is rectangular, width and height don’t exceed 100
-	Grid is completely surrounded by water
-	and there is one island (or nothing).
-	The island doesn’t have “lakes” (water
-	inside that isn’t connected to the water around the island)"""
+    """Returns the perimeter of the island in grid."""
 
-    if type(grid) != list:
-        raise TypeError("grid must be of type list of integers")
+    perim = 0
+    for i in range(len(grid)):
+        for j in range(len(grid[i])):
+            if grid[i][j]:
+                perim += num_water_neighbors(grid, i, j)
 
-    size = 0
-    height = len(grid)
-    width = len(grid[0])
-    for i in range(width):
-        for j in range(height):
-            if j == height - 1:
-                size += 1
-
-    return size * 2
+    return perim
